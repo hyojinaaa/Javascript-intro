@@ -45,8 +45,33 @@ var helloButton = document.querySelector("#hello");
 
 //Listen for clicks on the hello button 
 helloButton.onclick = function(){
-	alert('Love you jagi!');
+	alert('Jagi!');
 }
+
+// A function that adds two numbers together
+function caculateGrandTotal( prices ) {
+
+	// Create a variable to hold the grand total
+	var grandTotal = 0;
+
+	// Loop over all the prices
+	for( var i = 0; i < prices.length; i++) {
+		grandTotal = grandTotal + prices [i];
+	}
+
+	// Display the grand total
+	console.log( grandTotal );
+}
+
+// Some shopping carts
+var cart1 = [20, 15, 12, 45, 90, 198];
+var cart2 = [1, 12, 4, 6, 21];
+
+caculateGrandTotal( cart1 );
+caculateGrandTotal( cart2 );
+
+
+
 
 
 
